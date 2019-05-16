@@ -1,1 +1,6 @@
 # epilespy_regression_predictions
+
+In this study we have used several Machine Learning models for the regression question of predicting number of Emergency visits. In an earlier study, a classification analysis was done to investigate a patient as a high utilizer if she visited the ED more than once in a year. With the clinical feature space comprising of diagnosis, ccs conditions, frailty indicator, disabled flags, palliative care indicators (over than 300 features) high accuracy was noted for the binary classification task. 
+In this study the problem of regression has been undertaken. I use Ridge, Lasso, Elastic Net, Tree algorithms (CART, RandomForest, Adaboost) and Support Vector Machines. In epilepsy_nn.py a 3 layer Feed forward Neural Network model has been implemented. Mean squared error is reported. 
+I have seperately imputed continuous (mean value) and categorical variables (most frequent). Categorical variables have been one hot encoded. (epilepsy_preprocess.py)
+I have used sklearn library in Python for the machine learning models. I have used both Randomized and Grid Search for cross-validation. I have implement a 5 fold cross-validation for hyper-parameters. 

@@ -1,3 +1,10 @@
+#Here we built a 3 layer deep neural network to predict number of emergency visits for eplilepsy patients
+#the model has been built using tensorflow and Keras sequential model
+#same parametres have been used as the other machine learning models
+#We have used a batch size of 50 and total epochs = 1000
+#Final mean squared error has been reported
+
+
 from __future__ import absolute_import, division, print_function
 
 import tensorflow as tf
@@ -20,6 +27,7 @@ xtest = xtest.drop(xtest.columns[0], axis = 1)
 ytrain = ytrain.drop(ytrain.columns[0], axis = 1)
 ytest = ytest.drop(ytest.columns[0], axis = 1)
 
+#3 layer deep Neural Network with relu activation
 model = keras.Sequential([
     keras.layers.Dense(13, activation = 'relu'),
     keras.layers.Dense(8, activation = 'relu'),
@@ -31,4 +39,3 @@ model.compile(optimizer= 'adam', loss= 'mean_absolute_percentage_error', metrics
 epinn = model.fit(xtrin.values, ytrain.values, epochs = 1000, batch_size = 50)
 
 mean_squared_error(ytest.values, model.predict(xtest.values)) #27.70
-epinn_preds = model.predict(xtest.values)
