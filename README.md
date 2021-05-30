@@ -13,7 +13,7 @@ Run source env/bin/activate ./env or conda activate ./env to activate the create
 
 Code:
 
-the code for running the model is in src/data. The code is supposed to be run in the sequence epilepsy_preprocess.py (for data pre-processing), epilepsy.py (for running the ML models) and if required deep learning, to run 
+the code for running the model is in src/data. The code is supposed to be run in the sequence epilepsy_preprocess.py (for data pre-processing), epilepsy.py (for running the ML models) and if required deep learning, to run epilepsy_nn.py.
 
 Project Organization
 ------------
