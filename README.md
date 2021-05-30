@@ -11,6 +11,10 @@ Run conda env export -p ./env > environment.yml to create the required environme
 
 Run source env/bin/activate ./env or conda activate ./env to activate the created environment depending on which version of Conda you are using.
 
+Code:
+
+the code for running the model is in src/data. The code is supposed to be run in the sequence epilepsy_preprocess.py (for data pre-processing), epilepsy.py (for running the ML models) and if required deep learning, to run 
+
 Project Organization
 ------------
 
