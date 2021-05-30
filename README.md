@@ -8,6 +8,7 @@ In this study we have used several Machine Learning models for the regression qu
 Setup:
 
 Run conda env export -p ./env > environment.yml to create the required environment based on the required packages specified in environment.yml.
+
 Run source env/bin/activate ./env or conda activate ./env to activate the created environment depending on which version of Conda you are using.
 
 Project Organization
